@@ -1,6 +1,6 @@
 ﻿namespace MoneySense.Models.Expense
 {
-	public class Quotation
-	{
-	}
+    public class Unexpected
+    {
+    }
 }
