@@ -2,8 +2,8 @@
 
 namespace MoneySense.Controllers
 {
-    [Route("")]
     [ApiController]
+    [Route("v1")]
     public class HomeController : ControllerBase
     {
         [HttpGet("")]

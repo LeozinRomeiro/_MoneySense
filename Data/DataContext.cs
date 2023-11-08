@@ -1,12 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MoneySense.Models.Expense;
+using MoneySense.Models.Income;
 
 namespace MoneySense.Data
 {
     public class DataContext : DbContext
     {
-        //public DbSet<FillingStation> FillingStations { get; set; }
-        //public DbSet<Fuel> Fuels { get; set; }
-        //public DbSet<Price> Prices { get; set; }
+        public DbSet<Salary> Salaries { get; set; }
+        public DbSet<Other> Others { get; set; }
+        public DbSet<Models.Income.Unexpected> IncomeUnexpecteds { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
